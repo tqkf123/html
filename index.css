@@ -1,0 +1,167 @@
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: large;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/*header { width: 1200px; height: 100px; margin: 0 auto; }*/
+
+section { width: 1200px; height: 500px; margin: 0 auto; }
+
+body{
+    -webkit-text-size-adjust: 100%;
+    font-weight: 400;
+    font-family: 'Pretendard-Regular', 'Noto Saans KR',sans-serif;
+    line-height: 1.25;
+    color: #000;
+}
+
+li{ list-style: none; color: #000; }
+
+/*상단 Section*/
+.nav{
+    position: relative;
+    height: 70px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.company-name{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.company-name > h2{
+    font-size: 24px;
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 15px;
+}
+
+/*네비게이션바*/
+
+.nav >ul.gnb{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    justify-content: center;
+}
+
+/*네비게이션 바 아이템들 작성*/
+
+.nav >ul.gnb >li{ }
+
+.nav >ul.gnb >li >a{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+
+/*중간 Section*/
+#main-slide {
+    width: 100%;
+    
+}
+#main-slide >.imgg{
+    position: relative;
+}
+#main-slide >.imgg > img{
+    position: absolute; 
+    width: 100%;
+    height: 420px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+
+}
+/* 관련 이미지 Section */
+.gallery { 
+    float: left; width:800px; height: 400px; 
+    border: solid black;
+    padding: 0 10px; box-sizing: border-box;
+}
+.gallery h3 {
+    width: 100%; height: 50px;					/* 갤러리 타이틀 영역 */
+    box-sizing: border-box; border-bottom: 1px solid #535353;
+    font-size: 18px; line-height: 49px;
+}
+.gallery ul { margin: 10px;}
+.gallery li {
+   float: left;
+   width: 200px; height: 100px;  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*배너 Section*/
+.banner { 
+    float: left; width: 400px; height: 200px; 
+    padding: 10px 20px 0;
+    box-sizing: border-box;
+}
+/*동네 이야기 Section*/
+.chatting{width: 100%; height: 200px;}
+.chatting section{float: left;width: 400px;height: 100%;}
+.chatting h2.title{width: 100px;text-align: center;height: 40px;font-size: 20px;line-height: 40px;background-color: #eee;color: #b2b2b2;}
+.contents h2.on{color:#434748 ;background-color: #fff;}
+
+.chatting .board{}
+.chatting .board h2{}
+.chatting .board ul{width: 100%;height: 160px;}
+.chatting .board ul li{
+    width: 100%; height: 32px;line-height: 32px; font-size: 15px;
+}
+.chatting .board ul li a{text-align: left;}
+.chatting .board ul li a span{float: right;}
+
+/*하단 Section*/
+
+footer { width: 1200px; height: 100px; margin: 0 auto; }
+footer h1{ float: left; width: 200px; height: 40px; margin-top: 30px;}
+footer h1 > a{
+    
+}
+
+footer p{ float: left; width: 800px; height: 40px; margin-top: 30px; text-align: left; line-height: 40px;}
+.family{ float: left; width: 200px; height: 40px; margin-top: 30px;}
+
+.family button{
+    cursor:  pointer;
+    width: 100%; height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box; 
+    background-color: #fff;
+    padding-left: 10px;
+    text-align: left; line-height: 38px;
+}
+.family button .icon {
+    display: block; float: right;       
+    padding-right: 10px;
+}
+.family ul {
+    display: none;                           
+    position: absolute; top: -180px;    
+    width: 100%; height: 180px;
+    box-sizing: border-box;
+    border: 1px solid #000; border-bottom: none;
+    background-color: #000; line-height: 29px;
+}
+.family li {
+    width: 100%; height: 30px;			
+    padding-left: 10px;
+    box-sizing: border-box;
+}
